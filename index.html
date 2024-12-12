@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vehicle Rental</title>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">AutoRental</a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <i class="bx bx-menu"></i>
+            </label>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#fleet">Fleet</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#rental-info">Rental Info</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="backend/login.php">Login</a></li>
+                </ul>
+            </nav>
+            <div class="mode-switch">
+                <input type="checkbox" id="darkModeToggle">
+                <label for="darkModeToggle" class="mode-icon">
+                    <i class="bx bxs-moon"></i>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <section id="home" class="hero container">
+        <div class="content">
+            <h1>Welcome to <span>AutoRental</span></h1>
+            <p>We provide a wide range of cars, SUVs, and motorcycles for all your travel needs. Explore our fleet and rent your vehicle today!</p>
+            <div class="social-links">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="car-image.png" alt="Rental Vehicle" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Our Fleet Section -->
+<section id="our-fleet">
+    <h2>Our Fleet</h2>
+    <div class="fleet-projects">
+        <div class="fleet-project">
+            <img src="img/img2.png" alt="Sedan">
+            <h3>Sedan</h3>
+            <p>Comfortable sedans for your city rides.</p>
+            <a href="backend/login.php">Learn More</a>
+        </div>
+        <div class="fleet-project">
+            <img src="img/img3.png" alt="SUV">
+            <h3>SUV</h3>
+            <p>Spacious SUVs for family trips.</p>
+            <a href="backend/login.php">Learn More</a>
+        </div>
+        <div class="fleet-project">
+            <img src="img/img1.png" alt="Motorcycle">
+            <h3>Motorcycle</h3>
+            <p>Fast and nimble motorcycles for quick journeys.</p>
+            <a href="backend/login.php">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- Rental Information Section -->
+<section class="rental-info">
+    <h2>Rental Information</h2>
+    <p>Renting a vehicle from us is easy! Choose a vehicle, fill out a quick form, and you're ready to hit the road. We offer flexible rental periods and competitive pricing.</p>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about container">
+        <h2>About Us</h2>
+        <p>Founded in 2020, AutoRental has been providing top-tier vehicle rental services to customers across the country. We pride ourselves on our exceptional customer service and wide range of vehicles available for any need.</p>
+    </section>
+        <!-- User Reviews Section -->
+        <div class="user-reviews">
+            <h3>What Our Customers Say</h3>
+            <div class="review">
+                <div class="review-header">
+                    <h4>John Doe</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i> <!-- Setengah bintang -->
+                    </div>
+                </div>
+                <p>"Great service and very comfortable cars. I rented an SUV for a family trip and had a fantastic experience!"</p>
+            </div>
+    
+            <div class="review">
+                <div class="review-header">
+                    <h4>Jane Smith</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                </div>
+                <p>"I rented a motorcycle for a weekend getaway. The bike was in great condition, and the rental process was smooth and fast!"</p>
+            </div>
+    
+            <div class="review">
+                <div class="review-header">
+                    <h4>Michael Johnson</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i> <!-- Bintang kosong -->
+                    </div>
+                </div>
+                <p>"Good value for money. The staff was friendly and helpful. Will definitely use AutoRental again!"</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact container">
+        <h2>Contact</h2>
+        <p>If you want to work with us, feel free to reach out via email or social media.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AutoRental. All rights reserved.</p>
+    </footer>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>

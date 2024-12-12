@@ -1,0 +1,566 @@
+/* General Styles */
+html,
+body {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent; /* Default for light mode */
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f9532d;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333; /* Default color for light mode */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.menu li a:hover, 
+.menu li a.active {
+    color: #fff; /* Hover color in light mode */
+    background-color: #f9532d; /* Hover background color in light mode */
+}
+/* Hidden checkbox for toggling the menu */
+.menu-toggle {
+    display: none;
+}
+
+/* Hamburger icon and dark mode switch styles */
+.menu-icon {
+    display: none; /* Hide by default on larger screens */
+}
+
+.mode-switch {
+    display: flex;
+    align-items: center;
+}
+
+.mode-switch .mode-toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu li a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.menu li a:hover,
+.menu li a.active {
+    color: #fff;
+    background-color: #f9532d;
+}
+
+/* Dark Mode Toggle */
+.mode-switch {
+    display: flex;
+    align-items: center;
+}
+
+.mode-switch input {
+    display: none;
+}
+
+.mode-switch label {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #fff; /* Added background color */
+    border-bottom: 1px solid #eee;
+}
+
+.hero .content {
+    max-width: 500px;
+    padding-right: 20px;
+}
+
+.hero .content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero .content p {
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.hero .social {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero .social a {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.hero .social a:hover {
+    color: #f9532d;
+}
+
+.hero .hero-img {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    max-width: 800px;
+    margin: auto;
+    color: #666;
+}
+/* User Reviews Styling */
+.user-reviews {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.user-reviews h3 {
+    font-size: 1.8rem;
+    color: #f9532d; /* Light mode orange */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.review {
+    background-color: #fff; /* Light mode background for reviews */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-header h4 {
+    font-size: 1.4rem;
+    color: #f9532d; /* Light mode orange */
+    margin: 0;
+}
+
+.rating i {
+    font-size: 1.2rem;
+    color: #f9532d;
+    margin-right: 5px;
+}
+
+.review p {
+    font-size: 1rem;
+    color: #666; /* Light mode text color */
+    line-height: 1.6;
+}
+
+/* Dark Mode Adjustments for User Reviews */
+.dark-mode .review {
+    background-color: #444; /* Dark mode background for reviews */
+    color: #ddd; /* Default text color in dark mode */
+}
+
+.dark-mode .review-header h4 {
+    color: #f9532d; /* Header color in dark mode */
+}
+
+.dark-mode .review p {
+    color: #ccc; /* Text color in dark mode */
+}
+
+/* Our Fleet Section */
+#our-fleet {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+}
+
+#our-fleet h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.fleet-projects {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.fleet-project {
+    max-width: 300px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.fleet-project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fleet-project img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    filter: drop-shadow(1px 1px 20px rgba(249, 83, 45, 0.5)); /* Mengurangi intensitas awal */
+    transition: filter 0.3s ease; /* Memberikan transisi yang halus */
+}
+
+.fleet-project img:hover {
+    filter: drop-shadow(1px 1px 20px rgba(249, 83, 45, 1)); /* Efek lebih terang saat hover */
+}
+
+.fleet-project h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.fleet-project p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.fleet-project a {
+    color: #f9532d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.fleet-project a:hover {
+    color: #333;
+}
+
+/* Rental Information Section */
+.rental-info {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #fff;
+}
+
+.rental-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.rental-info p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Dark Mode Adjustments for Our Fleet and Rental Info */
+.dark-mode #our-fleet {
+    background-color: #333;
+}
+
+.dark-mode .fleet-project {
+    background-color: #444;
+    border-color: #555;
+    color: #ddd;
+}
+
+.dark-mode .fleet-project:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .fleet-project h3, .dark-mode #our-fleet h2 {
+    color: #f9532d;
+}
+
+.dark-mode .fleet-project p {
+    color: #ddd;
+}
+
+.dark-mode .rental-info {
+    background-color: #333;
+}
+
+.dark-mode .rental-info h2 {
+    color: #f9532d;
+}
+
+.dark-mode .rental-info p {
+    color: #ddd;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    border-top: 1px solid #444;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+}
+
+.dark-mode a {
+    color: #f0f0f0;
+}
+
+.dark-mode .navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for navbar */
+    border-bottom: 1px solid #444;
+}
+
+.dark-mode .menu li a {
+    color: #f0f0f0; /* Text color white */
+}
+
+.dark-mode .menu li a:hover, 
+.dark-mode .menu li a.active {
+    color: #fff; /* Keep text color white on hover */
+    background-color: #f9532d; /* Background color on hover */
+}
+
+.dark-mode .hero {
+    background-color: #333; /* Dark mode background for hero */
+}
+
+.dark-mode .hero .content h1 {
+    color: #f0f0f0;
+}
+
+.dark-mode .hero .content p {
+    color: #ddd;
+}
+
+.dark-mode .logo a {
+    color: #f9532d;
+}
+
+.dark-mode #about h2 {
+    color: #f9532d;
+}
+
+.dark-mode #about p {
+    color: #ddd;
+}
+
+.dark-mode .skills {
+    background-color: #333; /* Added background for dark mode */
+}
+
+.dark-mode .skills ul li {
+    background-color: #444;
+    border-color: #555;
+    color: #f0f0f0;
+}
+
+.dark-mode .skills ul li:hover {
+    background-color: #f9532d;
+    color: #fff;
+}
+
+.dark-mode .portfolio h2 {
+    color: #f9532d;
+}
+
+.dark-mode .project {
+    background-color: #333;
+    border-color: #444;
+    color: #ddd;
+}
+
+.dark-mode .contact {
+    background-color: #333; /* Added background for dark mode */
+}
+
+.dark-mode .contact h2 {
+    color: #f9532d;
+}
+
+.dark-mode footer {
+    background-color: #222;
+    color: #ddd;
+}
+
+/* Transitions for smooth mode change */
+body, .menu li a, .hero .content h1, .hero .content p, footer {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 0;
+    }
+    
+    .hero .content {
+        padding: 0;
+    }
+    
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .menu li a {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .portfolio .projects {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .about h2, .user-reviews h3 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .review {
+        padding: 15px;
+    }
+
+    .review-header h4 {
+        font-size: 1.2rem;
+    }
+
+    .rating i {
+        font-size: 1rem;
+    }
+
+    .review p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero img {
+        max-width: 300px;
+        width: 100%;
+    }
+}
