@@ -59,7 +59,7 @@ $rentalData = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <h3>Chat dengan Admin</h3>
                 <div class="chat-box">
                     <div class="chat-header">
-                        <h4>Chat dengan Admin</h4>
+                        <h4>Chat dengan aAdmin</h4>
                     </div>
                     <div class="chat-body">
                         <ul id="chat-log">
